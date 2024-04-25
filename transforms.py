@@ -390,6 +390,7 @@ def mosaic4(im_list, labels_list, img_size, mosaic_border):
 
     # Concat/clip labels
     labels4 = np.concatenate(labels4, 0)
+    np.clip(labels4[:, 1:], 0, 2 * s, out=labels4[:, 1:])
     # for x in (labels4[:, 1:], *segments4):
     #     np.clip(x, 0, 2 * s, out=x)  # clip when using random_perspective()
     # img4, labels4 = replicate(img4, labels4)  # replicate

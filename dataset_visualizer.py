@@ -35,9 +35,9 @@ def visualize(dataset: DetectionDataset):
 if __name__ == "__main__":
     dataset = DetectionDataset(
         training=True,
-        dataset_path="/Volumes/ASM236X/datasets/coco128/images/train2017",
+        dataset_path="/Users/sh/Desktop/quaming_test/images",
         image_size=640,
-        batch_size=3,
+        batch_size=1,
         stride=32,
     )
     visualize(dataset)

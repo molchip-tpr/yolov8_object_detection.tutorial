@@ -11,7 +11,7 @@ from transforms import AlbumentationsPreset, augment_hsv, fake_osd, mosaic4, ran
 
 
 class DetectionDataset(Dataset):
-    class_names = ['bicycle','door_warning_sign','electric_bicycle','gastank','people']
+    class_names = ["bicycle", "door_warning_sign", "electric_bicycle", "gastank", "people"]
 
     # Base Class For making datasets which are compatible with nano
     def __init__(
