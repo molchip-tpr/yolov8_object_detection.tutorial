@@ -1,4 +1,4 @@
-# yolov8_cspdarknet-detection
+# yolov8目标检测训练示例
 
 ## 训练模型
 ```shell
